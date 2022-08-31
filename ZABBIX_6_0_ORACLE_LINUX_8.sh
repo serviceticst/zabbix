@@ -15,7 +15,7 @@
 #           YouTube: https://youtube.com/c/serviceticst
 #            GitHub: https://github.com/serviceticst
 #
-#     Passo a passo: https://www.youtube.com/watch?v=6CZMjKBLN2Q&t=33s
+#     Passo a passo: https://www.youtube.com/watch?v=6CZMjKBLN2Q
 #              Blog: https://servicetic.com.br/zabbix-6-instalacao-automatizada-no-oracle-linux-8  
 # -------------------------------------------------
 #
