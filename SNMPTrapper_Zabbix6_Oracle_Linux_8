@@ -19,7 +19,7 @@
 #     Passo a passo: 
 # -------------------------------------------------
 
-dnf install -y epel-release wget nano telnet
+dnf install -y epel-release wget zabbix-sender
 dnf install -y net-snmp net-snmp-utils
 dnf install -y net-snmp-agent-libs
 dnf install -y net-snmp-perl
