@@ -1,3 +1,24 @@
+# ----------------------------------------------------------------------------
+#   INSTALACAO DO SNMPTRAPPER NO ZABBIX 6 NO ORACLE LINUX 8
+#   
+#   Download da ISO (INSTALACAO EM MINIMAL INSTALL): 
+#   https://yum.oracle.com/ISOS/OracleLinux/OL8/u5/x86_64/OracleLinux-R8-U5-x86_64-dvd.iso
+# ----------------------------------------------------------------------------
+#
+#  Desenvolvido por: Service TIC Solucoes Tecnologicas
+#            E-mail: contato@servicetic.com.br
+#              Site: www.servicetic.com.br
+#          Linkedin: https://www.linkedin.com/company/serviceticst
+#          Intagram: https://www.instagram.com/serviceticst
+#          Facebook: https://www.facebook.com/serviceticst
+#           Twitter: https://twitter.com/serviceticst
+#           YouTube: https://youtube.com/c/serviceticst
+#            GitHub: https://github.com/serviceticst
+#
+#     Passo a passo: https://www.youtube.com/watch?v=6CZMjKBLN2Q
+#              Blog: https://servicetic.com.br/zabbix-6-instalacao-automatizada-no-oracle-linux-8  
+# -------------------------------------------------
+#
 -------------------------------------------------
 dnf install -y epel-release wget nano telnet
 dnf install -y net-snmp net-snmp-utils
