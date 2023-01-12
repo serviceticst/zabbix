@@ -15,7 +15,10 @@
 #           YouTube: https://youtube.com/c/serviceticst
 #            GitHub: https://github.com/serviceticst
 #
--------------------------------------------------
+# -------------------------------------------------
+#     Passo a passo: 
+# -------------------------------------------------
+
 dnf install -y epel-release wget nano telnet
 dnf install -y net-snmp net-snmp-utils
 dnf install -y net-snmp-agent-libs
@@ -23,27 +26,37 @@ dnf install -y net-snmp-perl
 dnf config-manager --set-enabled ol8_codeready_builder
 dnf -y install perl-Net-SNMP perl-core
 dnf install -y http://repo.okay.com.mx/centos/8/x86_64/release/okay-release-1-3.el8.noarch.rpm
--------------------------------------------------
+
+# -------------------------------------------------
+
 cd /tmp 
 wget -c https://raw.githubusercontent.com/zabbix/zabbix/6.0.12/misc/snmptrap/zabbix_trap_receiver.pl
 cp zabbix_trap_receiver.pl /usr/bin
 chmod +x /usr/bin/zabbix_trap_receiver.pl
 touch /tmp/zabbix_traps.tmp
--------------------------------------------------
+
+# -------------------------------------------------
+
 vi /etc/snmp/snmptrapd.conf
 
 authCommunity execute public
 perl do "/usr/bin/zabbix_trap_receiver.pl";
--------------------------------------------------
+
+# -------------------------------------------------
+
 vi /etc/zabbix/zabbix_server.conf
 
 SNMPTrapperFile=/tmp/zabbix_traps.tmp
 StartSNMPTrapper=1
--------------------------------------------------
+
+# -------------------------------------------------
+
 systemctl enable snmptrapd
 systemctl restart snmptrapd
 systemctl restart zabbix-server
--------------------------------------------------
+
+# -------------------------------------------------
+
 TESTE SNMP
 
 INTERFACE UP
@@ -51,6 +64,9 @@ snmptrap -v 1 -c public 127.0.0.1 '.1.3.6.1.6.3.1.1.5.4' '0.0.0.0' 6 33 '55' .1.
 
 INTERFACE DOWN
 snmptrap -v 1 -c public 127.0.0.1 '.1.3.6.1.6.3.1.1.5.4' '0.0.0.0' 6 33 '55' .1.3.6.1.6.3.1.1.5.3 s "eth0"
--------------------------------------------------
+
+# -------------------------------------------------
+
 tail -f /tmp/zabbix_traps.tmp
--------------------------------------------------
+
+# -------------------------------------------------
