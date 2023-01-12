@@ -1,4 +1,4 @@
-## Script para instalação automatizada do Zabbix 6.0 no Oracle Linux 8
+## Script e materiais para instalações do Zabbix
 
 ######  Desenvolvido por: Service TIC Solucoes Tecnológicas
 ######            E-mail: contato@servicetic.com.br
