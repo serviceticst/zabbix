@@ -29,7 +29,7 @@ clear
 echo "#--------------------------------------------------------#"
 echo "INSTALANDO REPOSITORIO, ZABBIX SERVER, AGENT, SENDER E GET"
 echo "#--------------------------------------------------------#"
-rpm -Uvh https://repo.zabbix.com/zabbix/6.0/rhel/8/x86_64/zabbix-release-6.0-2.el8.noarch.rpm
+rpm -Uvh https://repo.zabbix.com/zabbix/6.0/rhel/8/x86_64/zabbix-release-6.0-4.el8.noarch.rpm
 dnf clean all
 dnf install zabbix-server-mysql zabbix-web-mysql zabbix-nginx-conf zabbix-sql-scripts zabbix-selinux-policy zabbix-agent2 zabbix-get zabbix-sender -y
 #
