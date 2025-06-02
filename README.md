@@ -8,6 +8,9 @@
 - 📥 [Instalação automatizada do Zabbix no Oracle Linux 8](https://github.com/serviceticst/zabbix/releases/tag/1.0.0)
 - 📥 [Instalação automatizada do Zabbix no Oracle Linux 9](https://github.com/serviceticst/zabbix/releases/tag/1.0.1)
 - 📥 [Instalação automatizada do SNMP Trapper do Zabbix no Oracle Linux 8](https://github.com/serviceticst/zabbix/releases/tag/1.1.0)
+- 📥 [Instalação automatizada do Zabbix Agent 2 via API no windows com cadastro automático no Front-End do Zabbix.](https://github.com/serviceticst/zabbix/releases/tag/1.2.0)
+
+
 
 ***
 
@@ -20,6 +23,8 @@
 - 📥 [Automated Zabbix Installation on Oracle Linux 8](https://github.com/serviceticst/zabbix/releases/tag/1.0.0)
 - 📥 [Automated Zabbix Installation on Oracle Linux 9](https://github.com/serviceticst/zabbix/releases/tag/1.0.1)
 - 📥 [Automated SNMP Trapper Zabbix Installation on Oracle Linux 8](https://github.com/serviceticst/zabbix/releases/tag/1.1.0)
+- 📥 [Automated installation of Zabbix Agent 2 via API on Windows with automatic registration in the Zabbix Front-End.](https://github.com/serviceticst/zabbix/releases/tag/1.2.0)
+
 
 ***
 ### Desenvolvido por: Service TIC Soluções Tecnológicas (Developed by: Service TIC Technological Solutions)
